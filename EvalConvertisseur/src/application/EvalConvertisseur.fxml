@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EvalController">
+   <children>
+      <TabPane prefHeight="295.0" prefWidth="509.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Longueur">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtLong1" layoutX="61.0" layoutY="77.0" onKeyReleased="#calculerLong1" />
+                        <TextField fx:id="txtLong2" layoutX="287.0" layoutY="77.0" onKeyReleased="#calculerLong2" />
+                        <ComboBox fx:id="cboLong1" layoutX="61.0" layoutY="104.0" onAction="#calculerLong1" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboLong2" layoutX="287.0" layoutY="104.0" onAction="#calculerLong2" prefHeight="27.0" prefWidth="162.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Volume">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtVol1" layoutX="64.0" layoutY="71.0" onKeyReleased="#calculerVol1" />
+                        <TextField fx:id="txtVol2" layoutX="279.0" layoutY="71.0" onKeyTyped="#calculerVol2" />
+                        <ComboBox fx:id="cboVol2" layoutX="279.0" layoutY="98.0" onAction="#calculerVol2" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboVol1" layoutX="64.0" layoutY="98.0" onAction="#calculerVol1" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Energy">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtEn1" layoutX="62.0" layoutY="71.0" onKeyReleased="#calculerTemp1" />
+                        <TextField fx:id="txtEn2" layoutX="286.0" layoutY="71.0" onKeyReleased="#calculerTemp2" />
+                        <ComboBox fx:id="cboEn2" layoutX="286.0" layoutY="98.0" onAction="#calculerTemp2" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboEn1" layoutX="62.0" layoutY="98.0" onAction="#calculerTemp1" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Masse">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtM1" layoutX="65.0" layoutY="72.0" onKeyReleased="#calculerMasse1" />
+                        <TextField fx:id="txtM2" layoutX="283.0" layoutY="72.0" onKeyReleased="#calculerMasse2" />
+                        <ComboBox fx:id="cboM2" layoutX="283.0" layoutY="99.0" onAction="#calculerMasse2" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboM1" layoutX="65.0" layoutY="99.0" onAction="#calculerMasse1" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Vitesse">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtVit1" layoutX="69.0" layoutY="70.0" onKeyReleased="#calculerVitesse1" />
+                        <TextField fx:id="txtVit2" layoutX="279.0" layoutY="70.0" onKeyReleased="#calculerVitesse2" />
+                        <ComboBox fx:id="cboVit2" layoutX="279.0" layoutY="97.0" onAction="#calculerVitesse2" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboVit1" layoutX="69.0" layoutY="97.0" onAction="#calculerVitesse1" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
