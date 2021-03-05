@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
-public class EvalController implements Initializable {
+public class EvalController implements Initializable { 
 
     @FXML
     private ComboBox<String> cboLong1;
